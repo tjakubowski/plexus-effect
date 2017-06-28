@@ -1,0 +1,33 @@
+@mixin noSpaces() {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin doTransition($duration : 0.2s, $what : all) {
+    -webkit-transition: $what $duration;
+    -o-transition: $what $duration;
+    transition: $what $duration;
+}
+
+@mixin noBlur() {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+
+    filter: none;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+
+@mixin doPseudos($color, $property) {
+    &:focus, &:active {
+        #{$property}: lighten($color, 5%);
+    }
+    &:hover {
+        #{$property}: lighten($color, 10%);
+    }
+}

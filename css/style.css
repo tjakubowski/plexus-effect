@@ -1,0 +1,131 @@
+body {
+  background-color: #f9f9f9;
+  font-family: "Lato";
+  font-size: 14px;
+  color: #100c0b;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+a {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #8687dd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8687dd;
+  text-decoration: none;
+}
+
+a:active {
+  color: #8687dd;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #8687dd;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.fullscreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #191726;
+  overflow: hidden;
+}
+
+.controls {
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.controls label {
+  display: block;
+}
+
+.controls:hover {
+  opacity: 1;
+}
+
+#app1 {
+  height: 200px;
+  background-color: #fff;
+}
+
+#app2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: #2f2e3a;
+  display: block;
+}
+
+#head {
+  height: 500px;
+  position: relative;
+}
+
+#logo {
+  text-align: center;
+  position: relative;
+  top: 150px;
+  z-index: 100;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 96px;
+}
+
+.plexus {
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-45deg, #DF4F64, #FEB027);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-45deg, #DF4F64, #FEB027);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-45deg, #DF4F64, #FEB027);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-45deg, #DF4F64, #FEB027);
+  /* Standard syntax */
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
