@@ -31,36 +31,6 @@ body {
   @include noSpaces();
 }
 
-hr {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-a {
-
-  @include doTransition();
-  color: $anchor;
-  text-decoration: none;
-
-  &:hover {
-    color: $anchor;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: $anchor;
-    text-decoration: none;
-  }
-
-  &:focus {
-    color: $anchor;
-    text-decoration: none;
-  }
-}
-
-ul {
-  @include noSpaces();
-  list-style-type: none;
-}
 
 .fullscreen {
   position: absolute;
@@ -85,6 +55,11 @@ ul {
 
   label {
     display: block;
+  }
+
+  input  {
+    display: block;
+    width: 100%;
   }
 
   &:hover {
